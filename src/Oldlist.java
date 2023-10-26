@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class list {
+public class Oldlist {
     public String name;
     ArrayList<Item> items = new ArrayList<>();
 
-    public list(String name) {
+    public Oldlist(String name) {
         this.name = name;
     }
     //takes a string and returns the index of a item in the array with the same name

@@ -1,8 +1,8 @@
-public class Item {
+public class OldItem {
     private final String name;
     private int amount;
 
-    public Item(String inName, int inAmount) {
+    public OldItem(String inName, int inAmount) {
         name = inName;
         amount = inAmount;
     }
