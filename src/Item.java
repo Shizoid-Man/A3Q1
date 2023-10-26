@@ -5,15 +5,7 @@ public class Item {
         name=inName;
         amount=inAmount;
     }
-    public void add(int num){
-        amount+=num;
 
-    }
-    public void remove(int num){
-        if (num>=amount){
-            amount=0;
-        }else amount-=num;
-    }
     public String toString(){
         return String.format("%s: %d",name,amount);
     }
