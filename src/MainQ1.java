@@ -2,11 +2,19 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+/*
+Assignment A3
+Submitted to Lauren Himbeault
+Submitted by Rudy Kreutzer
+For COMP-1020-A1
+Class Name: MainQ1
+Uses item and list to take file input and run commands from file and outputs the result
 
+ */
 public class MainQ1 {
     public static final String FILE_NAME = "a3q1in.txt";
-    public static list shoppingList = new list("Shopping List");
-    public static list purchaseList = new list("Purchase List");
+    public static List shoppingList = new List("Shopping List");
+    public static List purchaseList = new List("Purchase List");
     public static int index = 0;
     public static Scanner sc;
 

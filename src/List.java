@@ -1,10 +1,16 @@
 import java.util.ArrayList;
-
-class list {
+/*Assignment A3
+Submitted to Lauren Himbeault
+Submitted by Rudy Kreutzer
+For COMP-1020-A1
+Class Name: List
+Stores Items in a list and uses methods to alter quantity
+ */
+class List {
     public String name;
     ArrayList<Item> items = new ArrayList<>();
 
-    public list(String name) {
+    public List(String name) {
         this.name = name;
     }
 

@@ -1,8 +1,17 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+/*
+Assignment A3
+Submitted to Lauren Himbeault
+Submitted by Rudy Kreutzer
+For COMP-1020-A1
+Class Name: Genomic
+It is used to find and sort patterns in the ori string
+ */
 
 public class Genomic {
 
+    //takes a string and splits it into an arrayList of strings of a given length
     public static ArrayList<String> oriSplit(String ori, int length) {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < ori.length() - length + 1; i++) {
@@ -12,7 +21,7 @@ public class Genomic {
 
         return list;
     }
-
+    //uses ori split to count the amount of times the pattern is found in ori
     public static int patternCount(String ori, String pattern) {
         int count=0;
         for (String current : oriSplit(ori, pattern.length())) {
@@ -22,7 +31,7 @@ public class Genomic {
         }
         return count;
     }
-
+    //finds all patterns in ori of k length
     public static ArrayList<Word> findAllPatterns(String ori, int k) {
 
 
@@ -49,11 +58,11 @@ public class Genomic {
         mergeSort(list);
         return new ArrayList<>(Arrays.asList(list));
     }
-
+    //returns the frequency of the first element in the sorted array
     public static int findTopFrequency(ArrayList<Word> words) {
         return sortPatternsByFrequency(words).get(0).getFrequency();
     }
-
+    //combines previous methods to compose an Array List of patterns k long in ori that are of the top frequency
     public static String frequentWords(String ori, int k) {
         ArrayList<Word> freq = new ArrayList<>();
         ArrayList<Word> words = sortPatternsByFrequency(findAllPatterns(ori, k));
@@ -65,7 +74,8 @@ public class Genomic {
         }
         return freq.toString();
     }
-
+    //Using merge sort where we split the array in half until all sizes are one, then we use the knowledge that all
+    //single part arrays must be sorted to sort and merge up until the array is complete again.
     public static void mergeSort(Word[] words) {
 
         int length = words.length;

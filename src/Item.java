@@ -1,4 +1,12 @@
 class Item {
+    /*
+Assignment A3
+Submitted to Lauren Himbeault
+Submitted by Rudy Kreutzer
+For COMP-1020-A1
+Class Name: Item
+Stores basic info on an item
+ */
     private final String name;
     private int amount;
 
