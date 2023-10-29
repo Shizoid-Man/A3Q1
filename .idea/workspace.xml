@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74b7c195-9bc9-4fb5-a679-ec378676a653" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Genomic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConsoleColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTask02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTask03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTask04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTask05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OldItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Oldlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RudyKreutzerA3Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Genomic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Genomic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OldItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Oldlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RudyKreutzerA3Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainQ1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rudykreutzer/IdeaProjects/A3/src",
+    "last_opened_file_path": "/home/Rudy/IdeaProjects/A3Q1/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,15 +71,36 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.TestTask01">
-    <configuration name="RudyKreutzerA3Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RudyKreutzerA3Q1" />
+    <configuration name="TestTask01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTask01" />
       <module name="A3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTask01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestTask01" />
+    <configuration name="TestTask02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTask02" />
+      <module name="A3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTask03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTask03" />
+      <module name="A3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTask04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTask04" />
+      <module name="A3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTask05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestTask05" />
       <module name="A3" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,7 +109,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestTask01" />
-        <item itemvalue="Application.RudyKreutzerA3Q1" />
+        <item itemvalue="Application.TestTask02" />
+        <item itemvalue="Application.TestTask03" />
+        <item itemvalue="Application.TestTask04" />
+        <item itemvalue="Application.TestTask05" />
       </list>
     </recent_temporary>
   </component>
@@ -98,6 +129,8 @@
       <workItem from="1698332404489" duration="9127000" />
       <workItem from="1698343068306" duration="2743000" />
       <workItem from="1698345885725" duration="2051000" />
+      <workItem from="1698458609543" duration="1000000" />
+      <workItem from="1698600385898" duration="14330000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <option name="closed" value="true" />

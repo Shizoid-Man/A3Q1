@@ -1,11 +1,12 @@
-public class OldItem {
+class Item {
     private final String name;
     private int amount;
 
-    public OldItem(String inName, int inAmount) {
+    public Item(String inName, int inAmount) {
         name = inName;
         amount = inAmount;
     }
+
     //add and subtract are methods used to alter quantity
     public void add(int quantity) {
         amount += quantity;

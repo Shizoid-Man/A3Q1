@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 
-public class Oldlist {
+class list {
     public String name;
     ArrayList<Item> items = new ArrayList<>();
 
-    public Oldlist(String name) {
+    public list(String name) {
         this.name = name;
     }
-    //takes a string and returns the index of a item in the array with the same name
+
+    //takes a string and returns the index of an item in the array with the same name
     public int findName(String name) {
         for (int i = 0; i < items.size(); ++i) {
             if (items.get(i).getName().equals(name)) {
@@ -16,6 +17,7 @@ public class Oldlist {
         }
         return -1;
     }
+
     //uses findName to index an item of "named" and increases it by amount
     public void increase(String name, int amount) throws IndexOutOfBoundsException {
         int index = findName(name);
@@ -23,6 +25,7 @@ public class Oldlist {
             items.add(new Item(name, amount));
         } else items.get(index).add(amount);
     }
+
     //same as increase but subtracts and prints an error message when you subtract more than the amount if items
     public void decrease(String name, int amount) throws IndexOutOfBoundsException {
         int index = findName(name);
