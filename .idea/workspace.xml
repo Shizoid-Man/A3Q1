@@ -77,7 +77,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestTask01">
+  <component name="RunManager">
     <configuration name="TestTask01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestTask01" />
       <module name="A3" />

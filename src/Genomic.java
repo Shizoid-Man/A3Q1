@@ -53,7 +53,6 @@ public class Genomic {
     //back and returns the sorted List
     public static ArrayList<Word> sortPatternsByFrequency(ArrayList<Word> words) {
         mergeSort(words);
-
         return words;
     }
     //returns the frequency of the first element in the sorted array

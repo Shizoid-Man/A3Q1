@@ -7,11 +7,12 @@ Class Name: List
 Stores Items in a list and uses methods to alter quantity
  */
 public class ItemList {
-    public String name;
-    ArrayList<Item> Items = new ArrayList<>();
+    private String name;
+   private ArrayList<Item> Items;
 
     public ItemList(String name) {
         this.name = name;
+        Items = new ArrayList<>();
     }
 
     //takes a string and returns the index of an item in the array with the same name
