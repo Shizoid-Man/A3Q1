@@ -50,13 +50,11 @@ public class Genomic {
         return list;
     }
     //converts the ArrayList into an array for use in the sorting algorithm then converts
-    //back and returns the sorted list
+    //back and returns the sorted List
     public static ArrayList<Word> sortPatternsByFrequency(ArrayList<Word> words) {
-        Word[] list = new Word[words.size()];
-        list = words.toArray(list);
+        mergeSort(words);
 
-        mergeSort(list);
-        return new ArrayList<>(Arrays.asList(list));
+        return words;
     }
     //returns the frequency of the first element in the sorted array
     public static int findTopFrequency(ArrayList<Word> words) {
@@ -76,40 +74,35 @@ public class Genomic {
     }
     //Using merge sort where we split the array in half until all sizes are one, then we use the knowledge that all
     //single part arrays must be sorted to sort and merge up until the array is complete again.
-    public static void mergeSort(Word[] words) {
+    public static void mergeSort(ArrayList<Word> words) {
 
-        int length = words.length;
-        if (words.length == 1) {
+        int length = words.size();
+        if (words.size() == 1) {
             return;
         }
         int middle = length / 2;
-        Word[] first = new Word[middle];
-        Word[] second = new Word[length - middle];
-        System.arraycopy(words, 0, first, 0, middle);
-        if (length - middle >= 0) System.arraycopy(words, middle, second, 0, length - middle);
+        ArrayList<Word> first = new ArrayList<>(words.subList(0,middle));
+        ArrayList<Word> second = new ArrayList<>(words.subList(middle,length));
         mergeSort(first);
         mergeSort(second);
         mergeWords(words, first, second);
     }
 
-    public static void mergeWords(Word[] input, Word[] first, Word[] second) {
+    public static void mergeWords(ArrayList<Word> input, ArrayList<Word> first, ArrayList<Word> second) {
 
-        int firstSize = first.length;
-        int secondSize = second.length;
+        int firstSize = first.size();
+        int secondSize = second.size();
         int i = 0, j = 0, k = 0;
 
         while (i < firstSize && j < secondSize) {
-            int firstFrequency = first[i].getFrequency();
-            int secondFrequency = second[j].getFrequency();
-
-
+            int firstFrequency = first.get(i).getFrequency();
+            int secondFrequency = second.get(j).getFrequency();
             if (firstFrequency > secondFrequency) {
 
-                input[k] = first[i];
+                input.set(k,first.get(i));
                 i++;
             } else if (secondFrequency > firstFrequency) {
-
-                input[k] = second[j];
+                input.set(k,second.get(j));
                 j++;
             } else {
                 int n = 0;
@@ -117,17 +110,16 @@ public class Genomic {
                 char secondChar;
                 boolean done = false;
                 while (!done) {
-                    firstChar = first[i].getPattern().charAt(n);
-                    secondChar = second[j].getPattern().charAt(n);
+                    firstChar = first.get(i).getPattern().charAt(n);
+                    secondChar = second.get(j).getPattern().charAt(n);
 
                     if (firstChar < secondChar) {
-
-                        input[k] = first[i];
+                        input.set(k,first.get(i));
                         i++;
                         done = true;
                     } else if (secondChar < firstChar) {
 
-                        input[k] = second[j];
+                        input.set(k,second.get(j));
                         j++;
                         done = true;
                     } else n++;
@@ -136,12 +128,12 @@ public class Genomic {
             k++;
         }
         while (i < firstSize) {
-            input[k] = first[i];
+            input.set(k,first.get(i));
             i++;
             k++;
         }
         while (j < secondSize) {
-            input[k] = second[j];
+            input.set(k,second.get(j));
             j++;
             k++;
         }
