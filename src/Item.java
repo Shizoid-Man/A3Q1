@@ -1,4 +1,4 @@
-class Item {
+public class Item {
     /*
 Assignment A3
 Submitted to Lauren Himbeault

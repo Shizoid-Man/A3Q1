@@ -9,12 +9,11 @@ Submitted by Rudy Kreutzer
 For COMP-1020-A1
 Class Name: MainQ1
 Uses item and list to take file input and run commands from file and outputs the result
-
  */
 public class MainQ1 {
     public static final String FILE_NAME = "a3q1in.txt";
-    public static List shoppingList = new List("Shopping List");
-    public static List purchaseList = new List("Purchase List");
+    public static ItemList shoppingItemList = new ItemList("Shopping List");
+    public static ItemList purchaseItemList = new ItemList("Purchase List");
     public static int index = 0;
     public static Scanner sc;
 
@@ -48,21 +47,16 @@ public class MainQ1 {
         index++;
         switch (arguments[0]) {
             case "need":
-                shoppingList.increase(arguments[2], Integer.parseInt(arguments[1]));
+                shoppingItemList.increase(arguments[2], Integer.parseInt(arguments[1]));
                 runtime();
             case "buy":
-                try {
-                    shoppingList.decrease(arguments[2], Integer.parseInt(arguments[1]));
-
-
-                } catch (IndexOutOfBoundsException iob) {
-                    System.out.println("Warning " + arguments[2] + " not in list removing quantity of " + arguments[1]);
-                }
-                purchaseList.increase(arguments[2], Integer.parseInt(arguments[1]));
+                shoppingItemList.decrease(arguments[2], Integer.parseInt(arguments[1]));
+                purchaseItemList.increase(arguments[2], Integer.parseInt(arguments[1]));
                 runtime();
             case "list":
-                System.out.println(shoppingList.toString());
-                System.out.println(purchaseList.toString());
+                System.out.println("\n==============");
+                System.out.println(shoppingItemList.toString());
+                System.out.println(purchaseItemList.toString());
                 runtime();
             default:
                 System.out.println("Bad Instruction");
